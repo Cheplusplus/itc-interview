@@ -39,7 +39,7 @@ const emailValid = computed(() => {
   return regex.test(email.value);
 });
 const passwordProvided = computed(() => password.value !== "");
-const passwordGreaterThan6Char = computed(() => password.value.length < 6);
+const passwordAtLeast6Chars = computed(() => password.value.length >= 6);
 
 const handleSubmit = () => {
   errors.value = {};
@@ -56,7 +56,7 @@ const handleSubmit = () => {
 
   if (!passwordProvided.value) {
     errors.value.password = "Password is required";
-  } else if (!passwordGreaterThan6Char.value) {
+  } else if (!passwordAtLeast6Chars.value) {
     errors.value.password = "Password must be at least 6 characters";
   }
 
