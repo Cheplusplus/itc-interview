@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import HelloWorld from "./components/PersonalisedGreeting.vue";
-import { createRouter } from "vue-router";
+import { RouterView, RouterLink } from "vue-router";
 </script>
 
 <template>
-  <HelloWorld name="Che" />
+  <RouterLink to="/list">Go to About</RouterLink>
+  <RouterView />
 </template>
