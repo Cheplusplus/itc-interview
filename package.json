@@ -17,6 +17,7 @@
   "devDependencies": {
     "@babel/core": "^7.27.1",
     "@babel/preset-env": "^7.27.2",
+    "@testing-library/jest-dom": "^6.6.3",
     "@vitejs/plugin-vue": "^5.2.3",
     "@vue/test-utils": "^2.4.6",
     "@vue/tsconfig": "^0.7.0",
