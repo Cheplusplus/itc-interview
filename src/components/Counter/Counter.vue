@@ -1,21 +1,14 @@
 <template>
   <div class="counter">
-    <h2>Count: {{ count }}</h2>
+    <h2>Count: {{ store.state.count }}</h2>
     <button @click="increment">Increment</button>
     <button @click="reset">Reset</button>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { store } from "../../store";
 
-const count = ref(0);
-
-const increment = () => {
-  count.value++;
-};
-
-const reset = () => {
-  count.value = 0;
-};
+const increment = () => store.dispatch("incrementCounter");
+const reset = () => store.dispatch("resetCounter");
 </script>

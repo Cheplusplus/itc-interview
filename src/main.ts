@@ -2,20 +2,6 @@ import { createApp } from "vue";
 import "./style.css";
 import App from "./App.vue";
 import { router } from "./router";
-import { createStore } from "vuex";
-
-// Create a new store instance.
-const store = createStore({
-  state() {
-    return {
-      count: 0,
-    };
-  },
-  mutations: {
-    increment(state) {
-      state.count++;
-    },
-  },
-});
+import { store } from "./store";
 
 createApp(App).use(router).use(store).mount("#app");

@@ -6,14 +6,14 @@ This is a small Vue 3 project built with Vite as part of a technical interview. 
 - Component interaction
 - Basic form validation
 - Dynamic component rendering
-- Unit testing with Vue Test Utils and Jest (or Vitest)
+- Unit testing with Vue Test Utils and Jest
 
 ## 🔧 Tech Stack
 
 - [Vue 3](https://vuejs.org/)
 - [Vite](https://vitejs.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Jest](https://jestjs.io/) / [Vitest](https://vitest.dev/)
+- [Jest](https://jestjs.io/)
 - [Vue Test Utils](https://test-utils.vuejs.org/)
 
 ## 📦 Project Setup
