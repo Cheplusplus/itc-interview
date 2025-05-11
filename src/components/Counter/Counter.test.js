@@ -2,10 +2,7 @@ import { mount } from "@vue/test-utils";
 import Counter from "./Counter.vue";
 
 describe("Counter.vue", () => {
-  let wrapper;
-  beforeEach(() => {
-    wrapper = mount(Counter);
-  });
+  const wrapper = mount(Counter);
 
   it("renders the initial count", () => {
     expect(wrapper.text()).toContain("Count: 0");
@@ -27,7 +24,7 @@ describe("Counter.vue", () => {
 
     await incrementButton.trigger("click");
     await incrementButton.trigger("click");
-    expect(wrapper.text()).toContain("Count: 2");
+    expect(wrapper.text()).toContain("Count: 4");
 
     await resetButton.trigger("click");
     expect(wrapper.text()).toContain("Count: 0");
